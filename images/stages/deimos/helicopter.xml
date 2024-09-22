@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="helicopter.png" width="1540" height="289" spritePadding="3" borderPadding="1">
+	<SubTexture name="HELICOPTER0000" x="538" y="1" width="535" height="286" frameX="-7" frameY="0" frameWidth="535" frameHeight="287"/>
+	<SubTexture name="HELICOPTER0001" x="538" y="1" width="535" height="286" frameX="-7" frameY="0" frameWidth="535" frameHeight="287"/>
+	<SubTexture name="HELICOPTER0002" x="1076" y="1" width="463" height="287" frameX="-2" frameY="-4" frameWidth="535" frameHeight="287"/>
+	<SubTexture name="HELICOPTER0003" x="1076" y="1" width="463" height="287" frameX="-2" frameY="-4" frameWidth="535" frameHeight="287"/>
+	<SubTexture name="HELICOPTER0004" x="1" y="1" width="534" height="287" frameX="0" frameY="-1" frameWidth="535" frameHeight="287"/>
+	<SubTexture name="HELICOPTER0005" x="1" y="1" width="534" height="287" frameX="0" frameY="-1" frameWidth="535" frameHeight="287"/>
+	<SubTexture name="HELICOPTER0006" x="1076" y="1" width="463" height="287" frameX="-2" frameY="-4" frameWidth="535" frameHeight="287"/>
+	<SubTexture name="HELICOPTER0007" x="1076" y="1" width="463" height="287" frameX="-2" frameY="-4" frameWidth="535" frameHeight="287"/>
+</TextureAtlas>

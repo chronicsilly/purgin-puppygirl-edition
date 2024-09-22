@@ -1,0 +1,12 @@
+<!DOCTYPE codename-engine-character>
+<character camy="200" camx="150">
+	<anim name="danceLeft" anim="idleLeft" x="0" y="0" fps="24" loop="false"/>
+	<anim name="danceRight" anim="idleRight" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singUP" anim="up" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="right" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="left" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="down" x="0" y="0" fps="24" loop="false"/>
+	<anim name="hey" anim="hey" x="0" y="0" fps="24" loop="false"/>
+	<anim name="anim" anim="anim" x="0" y="0" fps="24" loop="false"/>
+	<anim name="end" anim="end" x="0" y="0" fps="24" loop="false"/>
+</character>

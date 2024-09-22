@@ -1,0 +1,16 @@
+{
+	"beatsPerMeasure": 4,
+	"opponentModeAllowed": false,
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"bpm": 155,
+	"difficulties": [
+		"NORMAL"
+	],
+	"parsedColor": -1572609,
+	"displayName": "Smoked",
+	"icon": "deimos",
+	"name": "Smoked",
+	"color": "#E800FF",
+	"customValues": {}
+}

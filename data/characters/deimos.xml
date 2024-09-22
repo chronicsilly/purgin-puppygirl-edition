@@ -1,0 +1,15 @@
+<!DOCTYPE codename-engine-character>
+<character color="#e800ff" camy="300" camx="300">
+	<anim name="idle" anim="idle" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singUP" anim="up" x="0" y="10" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="right" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="left" x="0" y="-10" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="down" x="-15" y="-5" fps="24" loop="false"/>
+	<anim name="singUP-alt" anim="altUp" x="0" y="10" fps="24" loop="false"/>
+	<anim name="singRIGHT-alt" anim="altRight" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT-alt" anim="altLeft" x="5" y="-5" fps="24" loop="false"/>
+	<anim name="singDOWN-alt" anim="altDown" x="-20" y="-5" fps="24" loop="false"/>
+	<anim name="hey" anim="hey" x="-8" y="1" fps="24" loop="false"/>
+	<anim name="cough" anim="cough" x="0" y="0" fps="24" loop="false"/>
+	<anim name="midget" anim="midget" x="0" y="0" fps="24" loop="false"/>
+</character>

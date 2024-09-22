@@ -1,0 +1,6 @@
+<!DOCTYPE codename-engine-character>
+<character>
+	<anim name="danceLeft" anim="idleLeft" x="0" y="0" fps="24" loop="false"/>
+	<anim name="danceRight" anim="idleRight" x="0" y="0" fps="24" loop="false"/>
+	<anim name="cheer" anim="hey" x="0" y="0" fps="24" loop="false"/>
+</character>

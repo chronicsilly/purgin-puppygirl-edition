@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="hank.png" width="1509" height="2116" spritePadding="3" borderPadding="1">
+	<SubTexture name="hank freakymenu0000" x="1" y="1" width="716" height="719" frameX="-62" frameY="-20" frameWidth="853" frameHeight="779"/>
+	<SubTexture name="hank freakymenu0001" x="1" y="1" width="716" height="719" frameX="-62" frameY="-20" frameWidth="853" frameHeight="779"/>
+	<SubTexture name="hank freakymenu0002" x="792" y="682" width="713" height="722" frameX="-63" frameY="-21" frameWidth="853" frameHeight="779"/>
+	<SubTexture name="hank freakymenu0003" x="792" y="682" width="713" height="722" frameX="-63" frameY="-21" frameWidth="853" frameHeight="779"/>
+	<SubTexture name="hank freakymenu0004" x="1" y="1404" width="737" height="711" frameX="-52" frameY="-17" frameWidth="853" frameHeight="779"/>
+	<SubTexture name="hank freakymenu0005" x="1" y="1404" width="737" height="711" frameX="-52" frameY="-17" frameWidth="853" frameHeight="779"/>
+	<SubTexture name="hank freakymenu0006" x="741" y="1407" width="767" height="687" frameX="-34" frameY="-16" frameWidth="853" frameHeight="779"/>
+	<SubTexture name="hank freakymenu0007" x="741" y="1407" width="767" height="687" frameX="-34" frameY="-16" frameWidth="853" frameHeight="779"/>
+	<SubTexture name="hank freakymenu0008" x="720" y="1" width="783" height="678" frameX="-24" frameY="-15" frameWidth="853" frameHeight="779"/>
+	<SubTexture name="hank freakymenu0009" x="720" y="1" width="783" height="678" frameX="-24" frameY="-15" frameWidth="853" frameHeight="779"/>
+	<SubTexture name="hank freakymenu0010" x="1" y="723" width="788" height="678" frameX="-20" frameY="-15" frameWidth="853" frameHeight="779"/>
+	<SubTexture name="hank freakymenu0011" x="1" y="723" width="788" height="678" frameX="-20" frameY="-15" frameWidth="853" frameHeight="779"/>
+	<SubTexture name="hank freakymenu0012" x="1" y="723" width="788" height="678" frameX="-20" frameY="-15" frameWidth="853" frameHeight="779"/>
+	<SubTexture name="hank freakymenu0013" x="1" y="723" width="788" height="678" frameX="-20" frameY="-15" frameWidth="853" frameHeight="779"/>
+</TextureAtlas>
