@@ -1,3 +1,4 @@
+//
 import flixel.util.FlxTimer;
 
 function create() {

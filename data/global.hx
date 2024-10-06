@@ -1,3 +1,4 @@
+//
 import funkin.backend.system.framerate.Framerate;
 import funkin.menus.credits.CreditsMain;
 

@@ -1,3 +1,4 @@
+//
 import openfl.display.BlendMode;
 
 function postCreate()

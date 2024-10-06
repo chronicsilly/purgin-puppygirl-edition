@@ -1,3 +1,4 @@
+//
 function postCreate() {
     insert(0, purp = new FunkinSprite().loadGraphic(Paths.image("menus/freeplay/purp")));
     purp.alpha = 0;

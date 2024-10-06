@@ -1,3 +1,4 @@
+//
 import hxvlc.flixel.FlxVideoSprite;
 
 function create() {

@@ -1,3 +1,4 @@
+//
 import funkin.options.OptionsMenu;
 import funkin.menus.ModSwitchMenu;
 
