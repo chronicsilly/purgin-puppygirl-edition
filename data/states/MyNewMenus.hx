@@ -41,7 +41,7 @@ function create() {
 }
 
 function update(elapsed:Float) {
-    if(controls.ACCEPT) {
+    if(controls.ACCEPT && bg.x == FlxG.width/2 - bg.width / 2) {
         FlxG.switchState([new ModState("Load"), new FreeplayState(), new OptionsMenu(), new ModState("CredState")][curSelect]);
     }
     if(controls.UP_P || controls.DOWN_P)
