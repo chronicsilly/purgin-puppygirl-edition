@@ -35,7 +35,7 @@ function create() {
         buttons[a].updateHitbox();
         add(buttons[a]);
     }
-    PlayState.loadWeek({"songs": [{"name": "smoked"}, {"name": "bite the kirb"}]});
+    PlayState.loadWeek({"songs": [{"name": "smoked"}, {"name": "bite the curb"}]});
     changeSelect(0);
 }
 
