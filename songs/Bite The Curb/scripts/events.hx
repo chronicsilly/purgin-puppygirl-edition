@@ -1,4 +1,6 @@
+//
 function postCreate() {
+    camHUD.alpha = 0;
     camGame.zoom = defaultCamZoom = 0.3;
 
     strumLines.members[0].characters[1].visible = false;
@@ -9,6 +11,7 @@ function postCreate() {
 function stepHit(curStep:Int) {
     switch (curStep) {
         case 0:
+            FlxTween.tween(camHUD, {alpha: 1}, (Conductor.stepCrochet / 1000) * 10, {ease: FlxEase.quadInOut});
             FlxTween.num(camGame.zoom, 0.8, (Conductor.stepCrochet / 1000) * 128, {ease: FlxEase.cubeInOut, onComplete: function(twn) defaultCamZoom = 0.4}, function(a) camGame.zoom = defaultCamZoom = a);
         case 128:
             strumLines.members[0].characters[0].visible = false;

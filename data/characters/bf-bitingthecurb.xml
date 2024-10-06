@@ -1,6 +1,6 @@
 <!DOCTYPE codename-engine-character>
-<character flipX="true" camx="750" camy="300">
-	<anim name="firstDeath" anim="death" x="0" y="0" fps="24" loop="false"/>
-	<anim name="deathLoop" anim="loop" x="0" y="0" fps="24" loop="true"/>
-	<anim name="deathConfirm" anim="confirm" x="0" y="0" fps="24" loop="false"/>
+<character sprite="bf-bitingthecurb" flipX="true" camx="750" camy="300" icon="bf">
+	<anim name="firstDeath" anim="death" x="0" y="-20" fps="24" loop="false"/>
+	<anim name="deathLoop" anim="loop" x="0" y="-20" fps="24" loop="true"/>
+	<anim name="deathConfirm" anim="confirm" x="1" y="-48" fps="24" loop="false"/>
 </character>

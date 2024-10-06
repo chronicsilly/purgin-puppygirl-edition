@@ -1,3 +1,4 @@
+//
 function postCreate(){
     camHUD.alpha = 0;
 }

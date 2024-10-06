@@ -1,6 +1,7 @@
 //
 import funkin.options.OptionsMenu;
 import funkin.menus.ModSwitchMenu;
+import funkin.editors.EditorPicker;
 
 var buttons:Array<FunkinSprite> = [];
 var shader = new FunkinShader("
@@ -49,6 +50,12 @@ function update(elapsed:Float) {
     if (controls.SWITCHMOD) {
         openSubState(new ModSwitchMenu());
         persistentUpdate = false;
+        persistentDraw = true;
+    }
+    
+    if (FlxG.keys.justPressed.SEVEN) {
+        openSubState(new EditorPicker());
+        persistentUpdate = true;
         persistentDraw = true;
     }
 }
