@@ -5,7 +5,11 @@ function postCreate(){
 
 function stepHit(curStep:Int) {
     switch (curStep) {
-        case 32: FlxTween.tween(camHUD, {alpha: 1}, (Conductor.stepCrochet / 1000) * 10, {ease: FlxEase.quadInOut});
+        case 0:
+            dad.cameraOffset.y = -1000;
+        case 32: 
+            FlxTween.tween(camHUD, {alpha: 1}, (Conductor.stepCrochet / 1000) * 10, {ease: FlxEase.quadInOut});
+            dad.cameraOffset.y = 300;
         case 64: defaultCamZoom = 0.5;
         case 70: defaultCamZoom = 0.6;
         case 76: defaultCamZoom = 0.7;
@@ -29,14 +33,14 @@ function stepHit(curStep:Int) {
             FlxTween.tween(camHUD, {alpha: 0}, (Conductor.stepCrochet / 1000) * 10, {ease: FlxEase.quadInOut});
             FlxTween.tween(camGame, {alpha: 0}, (Conductor.stepCrochet / 1000) * 36, {ease: FlxEase.quadInOut});
         case 1353 | 1357: defaultCamZoom += 0.1;
-        case 832:
+        case 828:
             defaultCamZoom = 0.45;
             var intro = new FunkinSprite().loadGraphic(Paths.image("game/songtitles/smoked_thing"));
             intro.screenCenter();
             add(intro);
             intro.scrollFactor.x = intro.scrollFactor.y = intro.zoomFactor = 0;
             intro.scale.x = intro.scale.y = 1.5;
-            new FlxTimer().start((Conductor.stepCrochet / 1000) * 4, ()->{remove(intro.destroy(), true);});
+            new FlxTimer().start((Conductor.stepCrochet / 1000) * 8, ()->{remove(intro.destroy(), true);});
     }
 }
 

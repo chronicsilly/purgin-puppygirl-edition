@@ -1,9 +1,9 @@
 <!DOCTYPE codename-engine-character>
-<character color="#ff7958" camy="200" camx="150">
+<character sprite="sanford" camx="150" camy="200" icon="sanford" color="#FF7958">
 	<anim name="idle" anim="idle" x="0" y="0" fps="24" loop="false"/>
 	<anim name="singUP" anim="up" x="0" y="20" fps="24" loop="false"/>
-	<anim name="singRIGHT" anim="right" x="0" y="0" fps="24" loop="false"/>
-	<anim name="singLEFT" anim="left" x="200" y="-55" fps="24" loop="false"/>
-	<anim name="singDOWN" anim="down" x="-5" y="30" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="right" x="2" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="left" x="-10" y="-55" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="down" x="-10" y="5" fps="24" loop="false"/>
 	<anim name="hey" anim="hey" x="0" y="0" fps="24" loop="false"/>
 </character>
