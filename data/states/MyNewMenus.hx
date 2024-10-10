@@ -47,15 +47,9 @@ function update(elapsed:Float) {
     }
     if(controls.UP_P || controls.DOWN_P)
         changeSelect(controls.UP_P ? -1 : 1);
-    if (controls.SWITCHMOD) {
-        openSubState(new ModSwitchMenu());
+    if (controls.SWITCHMOD || FlxG.keys.justPressed.SEVEN) {
+        openSubState(controls.SWITCHMOD ? new ModSwitchMenu() : new EditorPicker());
         persistentUpdate = false;
-        persistentDraw = true;
-    }
-    
-    if (FlxG.keys.justPressed.SEVEN) {
-        openSubState(new EditorPicker());
-        persistentUpdate = true;
         persistentDraw = true;
     }
 }
