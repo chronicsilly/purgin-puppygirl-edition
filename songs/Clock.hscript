@@ -8,10 +8,6 @@ function postCreate() { // this was, very fucking stressing due to codename lags
 }
 
 function update(elapsed:Float) {
-    // borrowed this code from my friend oofiewav
-    var pos = Math.max(Conductor.songPosition, 0);
-    var timeNow = Math.floor(pos / 60000) + " : " + CoolUtil.addZeros(Std.string(Math.floor(pos / 1000) % 60), 2);
-    var length = Math.floor(inst.length / 60000) + ":" + CoolUtil.addZeros(Std.string(Math.floor(inst.length / 1000) % 60), 2); 
-
-    timerTxt.text = timeNow;
+    // thank you Eliza <3
+    timerTxt.time = FlxStringUtil.formatTime(Conductor.songPosition / 1000, false);
 }
