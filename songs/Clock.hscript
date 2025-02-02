@@ -1,0 +1,17 @@
+// i only did this because the other script fucked my brain and i didn't want to mess something up in it
+import flixel.text.FlxTextBorderStyle;
+
+function postCreate() { // this was, very fucking stressing due to codename lagspiking for whatever fucking reason
+    insert(20, clock = new FlxSprite()).loadGraphic(Paths.image("game/timer")).screenCenter(FlxAxes.X).scale.set(0.76, 0.76);
+    insert(23, timerTxt = new FunkinText(0, FlxG.height - 678, 0, "X : XX", 32, true)).screenCenter(FlxAxes.X).setFormat(Paths.font("vcr.ttf"), 32, FlxColor.BLACK, "center", FlxTextBorderStyle.OUTLINE, FlxColor.RED);
+    clock.cameras = timerTxt.cameras = [camHUD];
+}
+
+function update(elapsed:Float) {
+    // borrowed this code from my friend oofiewav
+    var pos = Math.max(Conductor.songPosition, 0);
+    var timeNow = Math.floor(pos / 60000) + " : " + CoolUtil.addZeros(Std.string(Math.floor(pos / 1000) % 60), 2);
+    var length = Math.floor(inst.length / 60000) + ":" + CoolUtil.addZeros(Std.string(Math.floor(inst.length / 1000) % 60), 2); 
+
+    timerTxt.text = timeNow;
+}
