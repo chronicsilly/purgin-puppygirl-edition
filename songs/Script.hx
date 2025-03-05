@@ -29,17 +29,8 @@ function postCreate() {
     bar.createImageBar(Paths.image("game/bar/bar-" + strumLines.members[0].characters[0].curCharacter), Paths.image("game/bar/bar-" + strumLines.members[1].characters[0].curCharacter));
     bar.screenCenter(FlxAxes.X);
     
-    var intro = new FunkinSprite().loadGraphic(Paths.image("game/songtitles/" + SONG.meta.name));
-    intro.screenCenter();
-    add(intro);
-    intro.scrollFactor.x = intro.scrollFactor.y = intro.zoomFactor = 0;
-    intro.scale.x = intro.scale.y = 1.5;
-    FlxTween.tween(intro, {alpha: 0}, (Conductor.stepCrochet / 1000) * 16, {
-        startDelay: (Conductor.stepCrochet / 1000) * 20, onComplete: function(twn) remove(intro.destroy(), true)
-    });
-
     border.camera = bar.camera = rating.camera = centerIcon.camera = camHUD;
-    border.antialiasing = bar.antialiasing = rating.antialiasing = centerIcon.antialiasing = intro.antialiasing = Options.antialiasing;
+    border.antialiasing = bar.antialiasing = rating.antialiasing = centerIcon.antialiasing = Options.antialiasing;
 
 }
 
@@ -85,4 +76,3 @@ function onCameraMove() {
 }
 
 function onPlayerHit(e) daRating = e.rating;
-function onCountdown(e) e.cancel();

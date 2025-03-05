@@ -1,5 +1,6 @@
 // i only did this because the other script fucked my brain and i didn't want to mess something up in it
 import flixel.text.FlxTextBorderStyle;
+import flixel.util.FlxStringUtil;
 
 function postCreate() { // this was, very fucking stressing due to codename lagspiking for whatever fucking reason
     insert(20, clock = new FlxSprite()).loadGraphic(Paths.image("game/timer")).screenCenter(FlxAxes.X).scale.set(0.76, 0.76);
@@ -9,5 +10,5 @@ function postCreate() { // this was, very fucking stressing due to codename lags
 
 function update(elapsed:Float) {
     // thank you Eliza <3
-    timerTxt.time = FlxStringUtil.formatTime(Conductor.songPosition / 1000, false);
+    timerTxt.text = FlxStringUtil.formatTime(Conductor.songPosition / 1000, false);
 }

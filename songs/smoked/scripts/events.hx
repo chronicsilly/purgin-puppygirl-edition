@@ -1,15 +1,14 @@
 //
 function postCreate(){
     camHUD.alpha = 0;
+    dad.cameraOffset.y = -1000;
 }
 
 function stepHit(curStep:Int) {
     switch (curStep) {
-        case 0:
-            dad.cameraOffset.y = -1000;
         case 32: 
             FlxTween.tween(camHUD, {alpha: 1}, (Conductor.stepCrochet / 1000) * 10, {ease: FlxEase.quadInOut});
-            dad.cameraOffset.y = 300;
+            FlxTween.tween(dad.cameraOffset, {y: 300}, (Conductor.stepCrochet / 1000) * 32, {ease: FlxEase.quadInOut});
         case 64: defaultCamZoom = 0.5;
         case 70: defaultCamZoom = 0.6;
         case 76: defaultCamZoom = 0.7;

@@ -1,7 +1,8 @@
 //
 function postCreate() {
-    camHUD.alpha = 0;
+    camHUD.alpha = 1;
     camGame.zoom = defaultCamZoom = 0.3;
+    dad.cameraOffset.x = 2333; dad.cameraOffset.y = -3265;
 
     strumLines.members[0].characters[1].visible = false;
     strumLines.members[0].characters[1].x -= 50;
@@ -10,14 +11,9 @@ function postCreate() {
 
 function stepHit(curStep:Int) {
     switch (curStep) {
-        case 0:
-            dad.cameraOffset.y = -3265;
-            dad.cameraOffset.x = 2333;
-            FlxTween.tween(camHUD, {alpha: 1}, (Conductor.stepCrochet / 1000) * 0.2, {ease: FlxEase.quadInOut});
-            FlxTween.num(camGame.zoom, 0.8, (Conductor.stepCrochet / 1000) * 128, {ease: FlxEase.cubeInOut, onComplete: function(twn) defaultCamZoom = 0.4}, function(a) camGame.zoom = defaultCamZoom = a);
+        case 64:
+            FlxTween.tween(dad.cameraOffset, {x: 150, y: 200}, (Conductor.stepCrochet / 1000) * 64, {ease: FlxEase.quadInOut});
         case 128:
-            dad.cameraOffset.x = 150;
-            dad.cameraOffset.y = 200;
             strumLines.members[0].characters[0].visible = false;
             strumLines.members[0].characters[1].visible = true;
         case 132:
@@ -57,6 +53,10 @@ function stepHit(curStep:Int) {
         case 2050:
             FlxTween.tween(camGame, {alpha: 0}, (Conductor.stepCrochet / 1000) * 40);
     }
+}
+
+function onSongStart() {
+    FlxTween.num(camGame.zoom, 0.8, (Conductor.stepCrochet / 1000) * 128, {ease: FlxEase.cubeInOut, onComplete: function(twn) defaultCamZoom = 0.4}, function(a) camGame.zoom = defaultCamZoom = a);
 }
 
 function onGameOver(e) {

@@ -3,14 +3,14 @@
 	"opponentModeAllowed": false,
 	"coopAllowed": false,
 	"stepsPerBeat": 4,
-	"bpm": 155,
+	"bpm": 196,
 	"difficulties": [
 		"NORMAL"
 	],
-	"parsedColor": -1572609,
-	"displayName": "Smoked",
-	"icon": "deimos",
-	"name": "Smoked",
-	"color": "#E800FF",
+	"parsedColor": -34472,
+	"displayName": "Bite The Curb",
+	"icon": "sanford",
+	"name": "bite the curb",
+	"color": "#FF7958",
 	"customValues": {}
 }
